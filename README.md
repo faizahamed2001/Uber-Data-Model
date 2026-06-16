@@ -1,4 +1,4 @@
-#🚕 Uber Data Model – End-to-End Design <br>
+**🚕 Uber Data Model – End-to-End Design** <br>
 
 **📌 Overview** <br>
 
@@ -127,32 +127,32 @@ The model includes strong relational integrity using foreign keys:
 **📈 Use Cases** <br>
 This data model enables multiple business insights:
 
-🚖 Ride demand & supply analysis
-💰 Revenue and fare optimization
-⚡ Surge pricing monitoring
-👨‍✈️ Driver performance tracking
-📍 Location-based analytics
-⭐ Customer satisfaction analysis
-💳 Payment success/failure analysis
+ - 🚖 Ride demand & supply analysis
+ - 💰 Revenue and fare optimization
+ - ⚡ Surge pricing monitoring
+ - 👨‍✈️ Driver performance tracking
+ - 📍 Location-based analytics
+ - ⭐ Customer satisfaction analysis
+ - 💳 Payment success/failure analysis
 
 
 **🧠 Key Concepts Applied** <br>
 
-Relational Data Modeling
-Entity-Relationship Design
-Primary & Foreign Keys
-Data Normalization
-Transactional + Analytical Modeling
-Time-based event tracking
+ - Relational Data Modeling
+ - Entity-Relationship Design
+ - Primary & Foreign Keys
+ - Data Normalization
+ - Transactional + Analytical Modeling
+ - Time-based event tracking
 
 
 **🚀 Potential Enhancements** <br>
 
-Add real-time streaming integration (Kafka/Spark)
-Introduce data warehouse layer for BI reporting
-Implement partitioning for large-scale data
-Add fraud detection and anomaly tracking
-Integrate with Power BI dashboards
+ - Add real-time streaming integration (Kafka/Spark)
+ - Introduce data warehouse layer for BI reporting
+ - Implement partitioning for large-scale data
+ - Add fraud detection and anomaly tracking
+ - Integrate with Power BI dashboards
 
 
 **🔥 Conclusion** <br>
