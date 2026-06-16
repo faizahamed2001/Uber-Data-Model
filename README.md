@@ -1,24 +1,25 @@
-# Uber-Data-Model
-🚕 Uber Data Model – End-to-End Design
-📌 Overview
+**🚕 Uber Data Model – End-to-End Design** <br>
+
+**📌 Overview** <br>
+
 This project presents a comprehensive data model for an Uber-like ride-hailing system, designed to manage and analyze ride operations, driver activity, pricing, payments, and user interactions.
-The model is built to support:
+The model is built to support:<br>
 
-Real-time ride tracking
-Pricing and surge analysis
-Driver and rider insights
-Payment and rating analytics
-
-
-🎯 Objectives
-
-Design a scalable relational data model
-Ensure data integrity using primary & foreign keys
-Support analytical use cases and reporting
-Enable efficient querying for business insights
+ - Real-time ride tracking
+ - Pricing and surge analysis
+ - Driver and rider insights
+ - Payment and rating analytics
 
 
-🏗️ Data Model Architecture
+**🎯 Objectives** <br>
+
+ - Design a scalable relational data model
+ - Ensure data integrity using primary & foreign keys
+ - Support analytical use cases and reporting
+ - Enable efficient querying for business insights
+
+
+**🏗️ Data Model Architecture** <br>
 This model follows a normalized relational design with clearly defined entities and relationships.
 
 📊 Core Tables
