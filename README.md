@@ -1,4 +1,4 @@
-**🚕 Uber Data Model – End-to-End Design** <br>
+#🚕 Uber Data Model – End-to-End Design <br>
 
 **📌 Overview** <br>
 
@@ -22,100 +22,100 @@ The model is built to support:<br>
 **🏗️ Data Model Architecture** <br>
 This model follows a normalized relational design with clearly defined entities and relationships.
 
-📊 Core Tables
-👤 Riders (RIDERS)
+**📊 Core Tables** <br>
+**👤 Riders (RIDERS)** <br>
 Stores rider/customer details:
 
-Unique rider ID
-Contact details (email, phone)
-Profile info and activity status
+ - Unique rider ID
+ - Contact details (email, phone)
+ - Profile info and activity status
 
 
-🚖 Rides (RIDES)
+**🚖 Rides (RIDES)** <br>
 Central transactional table capturing ride details:
 
-Rider, driver, vehicle, and zone references
-Pickup & destination coordinates
-Ride status (requested, completed, cancelled)
-Fare details (estimated & final)
-Distance & duration
-Timestamps for each ride stage
+ - Rider, driver, vehicle, and zone references
+ - Pickup & destination coordinates
+ - Ride status (requested, completed, cancelled)
+ - Fare details (estimated & final)
+ - Distance & duration
+ - Timestamps for each ride stage
 
-👉 This is the core fact table of the model [cognizanto...epoint.com]
+👉 This is the core fact table of the model <br>
 
-👨‍✈️ Drivers (DRIVERS)
+**👨‍✈️ Drivers (DRIVERS)** <br>
 Stores driver-related information:
 
-Driver identity & license details
-Rating and total rides
-Online/offline status
+ - Driver identity & license details
+ - Rating and total rides
+ - Online/offline status
 
 
-🚗 Vehicles (VEHICLES)
+**🚗 Vehicles (VEHICLES)** <br>
 Contains vehicle information linked to drivers:
 
-Vehicle type, model, capacity
-License plate and company
-Active/inactive status
+ - Vehicle type, model, capacity
+ - License plate and company
+ - Active/inactive status
 
 
-📍 Driver Locations (DRIVER_LOCATIONS)
+**📍 Driver Locations (DRIVER_LOCATIONS)** <br>
 Tracks real-time driver movement:
 
-Latitude & longitude
-Speed, heading, and accuracy
-Timestamp of updates
+ - Latitude & longitude
+ - Speed, heading, and accuracy
+ - Timestamp of updates
 
-👉 Enables live tracking and proximity-based matching [cognizanto...epoint.com]
+👉 Enables live tracking and proximity-based matching
 
-🗺️ Pricing Zones (PRICING_ZONES)
+**🗺️ Pricing Zones (PRICING_ZONES)** <br>
 Defines geographic pricing boundaries:
 
-Zone-based pricing rules
-Base rate per km and per minute
-Minimum fare rules
+ - Zone-based pricing rules
+ - Base rate per km and per minute
+ - Minimum fare rules
 
 
-⚡ Surge Pricing (SURGE_PRICING)
+**⚡ Surge Pricing (SURGE_PRICING)** <br>
 Manages dynamic pricing:
 
-Surge multiplier per zone
-Time-based activation
+ - Surge multiplier per zone
+ - Time-based activation
 
-👉 Supports dynamic pricing strategy [cognizanto...epoint.com]
+👉 Supports dynamic pricing strategy
 
-⭐ Ratings (RATINGS)
+**⭐ Ratings (RATINGS)** <br>
 Captures feedback between riders and drivers:
 
-Star ratings
-Comments
-Rater and ratee relationships
+ - Star ratings
+ - Comments
+ - Rater and ratee relationships
 
 
-💳 Payments (PAYMENTS)
+**💳 Payments (PAYMENTS)** <br>
 Stores payment transactions:
 
-Payment amount and method
-Status (success/failure)
-Gateway transaction details
-Processing timestamps
+ - Payment amount and method
+ - Status (success/failure)
+ - Gateway transaction details
+ - Processing timestamps
 
 
-🔗 Relationships
+**🔗 Relationships** <br>
 The model includes strong relational integrity using foreign keys:
 
-Rider → Rides (1:N)
-Driver → Rides (1:N)
-Vehicle → Rides (1:N)
-Pricing Zone → Rides (1:N)
-Pricing Zone → Surge Pricing (1:N)
-Ride → Payments (1:N)
-Ride → Ratings (1:N)
-Driver → Driver Location (1:N)
+ - Rider → Rides (N:N)
+ - Driver → Rides (1:N)
+ - Vehicle → Rides (1:N)
+ - Pricing Zone → Rides (1:N)
+ - Pricing Zone → Surge Pricing (1:N)
+ - Ride → Payments (1:N)
+ - Ride → Ratings (1:N)
+ - Driver → Driver Location (1:N)
 
-👉 Relationships ensure data consistency and referential integrity [cognizanto...epoint.com]
+👉 Relationships ensure data consistency and referential integrity
 
-⚙️ Key Features
+**⚙️ Key Features** <br>
 
 ✅ Fully normalized relational schema
 ✅ Foreign key constraints for integrity
@@ -124,7 +124,7 @@ Driver → Driver Location (1:N)
 ✅ Handles both transactional and analytical workloads
 
 
-📈 Use Cases
+**📈 Use Cases** <br>
 This data model enables multiple business insights:
 
 🚖 Ride demand & supply analysis
@@ -136,7 +136,7 @@ This data model enables multiple business insights:
 💳 Payment success/failure analysis
 
 
-🧠 Key Concepts Applied
+**🧠 Key Concepts Applied** <br>
 
 Relational Data Modeling
 Entity-Relationship Design
@@ -146,7 +146,7 @@ Transactional + Analytical Modeling
 Time-based event tracking
 
 
-🚀 Potential Enhancements
+**🚀 Potential Enhancements** <br>
 
 Add real-time streaming integration (Kafka/Spark)
 Introduce data warehouse layer for BI reporting
@@ -155,14 +155,5 @@ Add fraud detection and anomaly tracking
 Integrate with Power BI dashboards
 
 
-🔥 Conclusion
+**🔥 Conclusion** <br>
 This project demonstrates the design of a scalable, production-ready Uber data model, capable of handling complex ride lifecycle events, pricing logic, and user interactions while maintaining strong data integrity.
-
-⭐ Support
-If you found this project useful:
-
-⭐ Star the repository
-🍴 Fork and enhance it
-🤝 Contribute improvements
-
-
