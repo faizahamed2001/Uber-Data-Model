@@ -117,11 +117,11 @@ The model includes strong relational integrity using foreign keys:
 
 **⚙️ Key Features** <br>
 
-✅ Fully normalized relational schema
-✅ Foreign key constraints for integrity
-✅ Indexing on critical columns for performance
-✅ Support for real-time and batch analytics
-✅ Handles both transactional and analytical workloads
+ - ✅ Fully normalized relational schema
+ - ✅ Foreign key constraints for integrity
+ - ✅ Indexing on critical columns for performance
+ - ✅ Support for real-time and batch analytics
+ - ✅ Handles both transactional and analytical workloads
 
 
 **📈 Use Cases** <br>
